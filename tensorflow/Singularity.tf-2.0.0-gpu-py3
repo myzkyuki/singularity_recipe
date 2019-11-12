@@ -14,18 +14,22 @@ From: tensorflow/tensorflow:2.0.0-gpu-py3
 %labels
 
 %post
-    pip3 install keras
-    pip3 install mlflow
-    pip3 install boto3
-    pip3 install awscli
-    pip3 install opencv-python
-    pip3 install tensorlayer
-    pip3 install click
-    pip3 install tqdm
-    pip3 install easydict
-    pip3 install autopep8
-    pip3 install jupyter_contrib_nbextensions && jupyter contrib nbextension install
+    /usr/local/bin/pip3 --no-cache-dir install \
+        keras \
+        mlflow \
+        boto3 \
+        awscli \
+        opencv-python \
+        tensorlayer \
+        click \
+        tqdm \
+        easydict \
+        autopep8 \
+        jupyter_contrib_nbextensions && jupyter contrib nbextension install
+
     apt-get update
-    apt-get -y install python3-tk
-    apt-get install -y libsm6 libxext6
+    apt-get install -y \
+        python3-tk \
+        libsm6 \
+        libxext6
 
