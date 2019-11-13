@@ -31,5 +31,6 @@ From: tensorflow/tensorflow:2.0.0-gpu-py3
     apt-get install -y \
         python3-tk \
         libsm6 \
-        libxext6
+        libxext6 \
+        git
 
