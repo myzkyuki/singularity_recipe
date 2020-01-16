@@ -15,6 +15,9 @@ From: tensorflow/tensorflow:1.14.0-gpu-py3
 
 %post
     /usr/local/bin/pip3 --no-cache-dir install \
+        Pillow \
+        pandas \
+        matplotlib \
         mlflow \
         boto3 \
         awscli \
