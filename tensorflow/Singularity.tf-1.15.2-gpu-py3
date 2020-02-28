@@ -15,6 +15,7 @@ From: tensorflow/tensorflow:1.15.2-gpu-py3
 
 %post
     /usr/local/bin/pip3 --no-cache-dir install \
+        Cython \
         tensorflow-addons \
         tensorflow-probability \
         keras \
