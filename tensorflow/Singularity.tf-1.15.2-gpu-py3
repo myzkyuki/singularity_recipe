@@ -27,6 +27,7 @@ From: tensorflow/tensorflow:1.15.2-gpu-py3
         lxml \
         matplotlib \
         mlflow \
+        numpy=1.17 \
         opencv-python \
         pandas \
         Pillow \
