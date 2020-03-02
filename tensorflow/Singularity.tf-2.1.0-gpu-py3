@@ -15,20 +15,31 @@ From: tensorflow/tensorflow:2.1.0-gpu-py3
 
 %post
     /usr/local/bin/pip3 --no-cache-dir install \
-        Cython \
-        tensorflow-addons \
-        tensorflow-probability \
-        keras \
-        mlflow \
-        boto3 \
-        awscli \
-        opencv-python \
-        tensorlayer \
-        click \
-        tqdm \
-        easydict \
         autopep8 \
-        jupyter_contrib_nbextensions && jupyter contrib nbextension install
+        awscli \
+        boto3 \
+        click \
+        contextlib2 \
+        Cython \
+        easydict \
+        kaggle \
+        keras \
+        lxml \
+        matplotlib \
+        mlflow \
+        opencv-python \
+        pandas \
+        Pillow \
+        pyarrow \
+        scipy \
+        seaborn \
+        sklearn \
+        tensorflow-addons \
+        tensorflow-datasets \
+        tensorflow-probability \
+        tensorlayer \
+        tqdm \
+        wheel
 
     apt-get update
     apt-get install -y \
