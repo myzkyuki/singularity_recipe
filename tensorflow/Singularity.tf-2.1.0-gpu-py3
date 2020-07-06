@@ -24,7 +24,6 @@ From: tensorflow/tensorflow:2.1.0-gpu-py3
         easydict \
         efficientnet \
         kaggle \
-        keras \
         lxml \
         matplotlib \
         mlflow \
