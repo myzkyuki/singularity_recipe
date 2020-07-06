@@ -37,7 +37,7 @@ From: tensorflow/tensorflow:2.1.0-gpu-py3
         scipy \
         seaborn \
         sklearn \
-        tensorflow-addons \
+        tensorflow-addons==0.9.1 \
         tensorflow-datasets \
         tensorflow-probability \
         tensorlayer \
