@@ -28,7 +28,6 @@ From: tensorflow/tensorflow:2.3.0-gpu
     /usr/local/bin/pip3 --no-cache-dir install awscli
     /usr/local/bin/pip3 --no-cache-dir install boto3
     /usr/local/bin/pip3 --no-cache-dir install Cython
-    /usr/local/bin/pip3 --no-cache-dir install kaggle
     /usr/local/bin/pip3 --no-cache-dir install matplotlib
     /usr/local/bin/pip3 --no-cache-dir install mlflow
     /usr/local/bin/pip3 --no-cache-dir install mtcnn
