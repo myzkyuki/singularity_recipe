@@ -22,7 +22,6 @@ From: tensorflow/tensorflow:2.3.0-gpu
         matplotlib \
         mlflow \
         mtcnn \
-        opencv-python \
         pandas \
         Pillow \
         scipy \
@@ -38,6 +37,8 @@ From: tensorflow/tensorflow:2.3.0-gpu
     apt-get update
     apt-get install -y \
         python3-tk \
+        libopencv-dev \
+        python3-opencv \
         libsm6 \
         libxext6 \
         git
