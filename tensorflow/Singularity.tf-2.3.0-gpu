@@ -8,8 +8,8 @@ From: tensorflow/tensorflow:2.3.0-gpu
 
 %environment
     export SSL_CERT_FILE="/etc/ssl/certs/ca-certificates.crt"
-    export LC_ALL=ja_JP.UTF-8
-    export LANG=ja_JP.UTF-8
+    export LC_ALL=en_US.UTF-8
+    export LANG=en_US.UTF-8
 
 %labels
 
@@ -24,23 +24,23 @@ From: tensorflow/tensorflow:2.3.0-gpu
         language-pack-ja \
         git
 
-    /usr/local/bin/pip3 --no-cache-dir install \
-        awscli \
-        boto3 \
-        Cython \
-        kaggle \
-        matplotlib \
-        mlflow \
-        mtcnn \
-        pandas \
-        Pillow \
-        scipy \
-        seaborn \
-        sklearn \
-        tensorboard \
-        tensorboard-plugin-profile \
-        tensorflow-addons \
-        tensorflow-datasets \
-        tensorflow-probability \
-        tqdm
+    /usr/local/bin/pip3 --no-cache-dir install --upgrade pip
+    /usr/local/bin/pip3 --no-cache-dir install awscli
+    /usr/local/bin/pip3 --no-cache-dir install boto3
+    /usr/local/bin/pip3 --no-cache-dir install Cython
+    /usr/local/bin/pip3 --no-cache-dir install kaggle
+    /usr/local/bin/pip3 --no-cache-dir install matplotlib
+    /usr/local/bin/pip3 --no-cache-dir install mlflow
+    /usr/local/bin/pip3 --no-cache-dir install mtcnn
+    /usr/local/bin/pip3 --no-cache-dir install pandas
+    /usr/local/bin/pip3 --no-cache-dir install Pillow
+    /usr/local/bin/pip3 --no-cache-dir install scipy
+    /usr/local/bin/pip3 --no-cache-dir install seaborn
+    /usr/local/bin/pip3 --no-cache-dir install sklearn
+    /usr/local/bin/pip3 --no-cache-dir install tensorboard
+    /usr/local/bin/pip3 --no-cache-dir install tensorboard-plugin-profile
+    /usr/local/bin/pip3 --no-cache-dir install tensorflow-addons
+    /usr/local/bin/pip3 --no-cache-dir install tensorflow-datasets
+    /usr/local/bin/pip3 --no-cache-dir install tensorflow-probability
+    /usr/local/bin/pip3 --no-cache-dir install tqdm
 
