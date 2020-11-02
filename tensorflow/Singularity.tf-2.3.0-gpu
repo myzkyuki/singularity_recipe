@@ -14,6 +14,16 @@ From: tensorflow/tensorflow:2.3.0-gpu
 %labels
 
 %post
+    apt-get update
+    apt-get install -y \
+        python3-tk \
+        libopencv-dev \
+        python3-opencv \
+        libsm6 \
+        libxext6 \
+        language-pack-ja \
+        git
+
     /usr/local/bin/pip3 --no-cache-dir install \
         awscli \
         boto3 \
@@ -33,13 +43,4 @@ From: tensorflow/tensorflow:2.3.0-gpu
         tensorflow-datasets \
         tensorflow-probability \
         tqdm
-
-    apt-get update
-    apt-get install -y \
-        python3-tk \
-        libopencv-dev \
-        python3-opencv \
-        libsm6 \
-        libxext6 \
-        git
 
