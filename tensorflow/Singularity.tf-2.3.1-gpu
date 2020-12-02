@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: tensorflow/tensorflow:2.3.0-gpu
+From: tensorflow/tensorflow:2.3.1-gpu
 
 %runscript
     exec echo "Tensorflow GPU container"
@@ -18,7 +18,6 @@ From: tensorflow/tensorflow:2.3.0-gpu
         awscli \
         boto3 \
         Cython \
-        kaggle \
         matplotlib \
         mlflow \
         mtcnn \
