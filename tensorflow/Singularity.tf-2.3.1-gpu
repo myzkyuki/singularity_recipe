@@ -34,7 +34,8 @@ From: tensorflow/tensorflow:2.3.1-gpu
         tensorflow-datasets \
         tensorflow-hub \
         tensorflow-probability \
-        tqdm
+        tqdm \
+        lxml
 
     apt-get update
     export DEBIAN_FRONTEND=noninteractive
