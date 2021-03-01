@@ -30,8 +30,10 @@ From: tensorflow/tensorflow:2.3.1-gpu
         sklearn \
         tensorboard \
         tensorboard-plugin-profile \
+        tensorflow==2.3.1 \
         tensorflow-addons \
         tensorflow-datasets \
+        tensorflow-estimator \
         tensorflow-hub \
         tensorflow-probability \
         tf-models-official==2.3.0 \
