@@ -10,6 +10,7 @@ From: tensorflow/tensorflow:2.3.1-gpu
     export SSL_CERT_FILE="/etc/ssl/certs/ca-certificates.crt"
     export LC_ALL=C.UTF-8
     export LANG=C.UTF-8
+    export DEBIAN_FRONTEND=noninteractive
 
 %labels
 
@@ -21,7 +22,7 @@ From: tensorflow/tensorflow:2.3.1-gpu
         efficientnet \
         matplotlib \
         mlflow \
-        mtcnn \
+        git+https://github.com/simone1999/mtcnn.git@patch-1 \
         optuna \
         pandas \
         Pillow \
@@ -41,7 +42,6 @@ From: tensorflow/tensorflow:2.3.1-gpu
         lxml
 
     apt-get update
-    export DEBIAN_FRONTEND=noninteractive
     apt-get install -y tzdata
     apt-get install -y \
         python3-tk \
