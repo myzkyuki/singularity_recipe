@@ -47,7 +47,7 @@ From: tensorflow/tensorflow:2.4.3-gpu
         tensorflow-estimator \
         tensorflow-hub \
         tensorflow-probability \
-        tf-models-official==2.4.3 \
+        tf-models-official==2.4.0 \
         tqdm \
         lxml
 
