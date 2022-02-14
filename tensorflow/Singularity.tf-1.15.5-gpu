@@ -28,12 +28,14 @@ From: tensorflow/tensorflow:1.15.5-gpu
     /usr/local/bin/pip3 --no-cache-dir install \
         awscli \
         boto3 \
+        contextlib2 \
         Cython \
         efficientnet \
         matplotlib \
         mlflow \
         git+https://github.com/simone1999/mtcnn.git@patch-1 \
         optuna \
+        numpy==1.17 \
         pandas \
         Pillow \
         scipy \
